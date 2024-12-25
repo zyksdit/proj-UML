@@ -18,7 +18,7 @@ function UMLToolbox({
       <button onClick={() => onGenerateCode("Java")}>Generate Java Code</button>
       <button onClick={() => onGenerateCode("PHP")}>Generate PHP Code</button>
       <button onClick={() => onGenerateCode("Python")}>Generate Python Code</button>
-      <button onClick={onAddAssociation}>Add Association</button> {/* Nouveau bouton */}
+      <button onClick={onAddAssociation}>Add Association</button> 
     </div>
   );
 }

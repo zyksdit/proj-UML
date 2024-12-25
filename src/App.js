@@ -208,7 +208,7 @@ function App() {
           const methods = el.methods
             .map(
               (method) =>
-                `    public ${method.type} ${method.name}() {\n        // TODO: Implement\n    }`
+                `    public ${method.type} ${method.name}() {\n    }`
             )
             .join("\n");
   
@@ -221,7 +221,7 @@ function App() {
           const methods = el.methods
             .map(
               (method) =>
-                `    public function ${method.name}() {\n        // TODO: Implement\n    }`
+                `    public function ${method.name}() {\n            }`
             )
             .join("\n");
   
@@ -234,7 +234,7 @@ function App() {
           const methods = el.methods
             .map(
               (method) =>
-                `    def ${method.name}(self):\n        # TODO: Implement\n        pass`
+                `    def ${method.name}(self):\n    \n        pass`
             )
             .join("\n");
   
@@ -251,7 +251,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>UML Class Diagram Tool</h1>
+        <h1>UML Conception de diagramme de classe </h1>
       </header>
       <UMLToolbox
         onAddClass={handleAddClass}
@@ -271,6 +271,8 @@ function App() {
         onDeleteClass={handleDeleteClass}
         onDeleteAssociation={handleDeleteAssociation}
       />
+    
+
       {showModal && (
   <div className="modal">
     <div className="modal-content">
@@ -317,7 +319,6 @@ function App() {
         <button onClick={() => handleAddField("attributes")}>
           Add Attribute
         </button>
-        <h3>Methods</h3>
         <h3>Methods</h3>
         {newClassData.methods.map((method, index) => (
             <div key={index} className="field-row">
@@ -398,11 +399,11 @@ function App() {
                 onChange={(e) => setAssociationType(e.target.value)}
                 style={{ width: "100%", marginBottom: "10px" }}
               >
-                <option value="unidirectional">Unidirectional</option>
-                <option value="bidirectional">Bidirectional</option>
-                <option value="aggregation">Aggregation</option>
+                <option value="unidirectionnelle">Unidirectional</option>
+                <option value="bidirectionnelle">Bidirectional</option>
+                <option value="Agrégations">Aggregation</option>
                 <option value="composition">Composition</option>
-                <option value="generalization">Generalization</option>
+                <option value="généralisations">Generalization</option>
               </select>
             </div>
 
