@@ -1,0 +1,96 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Graph Container */
+#graphContainer {
+  width: 80%;
+  height: 600px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Selected Class Panel */
+div > h3 {
+  margin: 20px auto 10px auto;
+  color: #444;
+  font-weight: bold;
+}
+
+div > button {
+  margin: 10px 5px;
+}
+
+/* Diagram Controls */
+.diagram-controls {
+  margin: 20px 0;
+}
+
+/* Save and Generate Code Buttons */
+.save-generate-buttons {
+  margin: 20px auto;
+}
+
+.save-generate-buttons button {
+  background-color: #2196F3;
+}
+
+.save-generate-buttons button:hover {
+  background-color: #1e88e5;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  #graphContainer {
+      width: 95%;
+      height: 400px;
+  }
+
+  button {
+      padding: 8px 15px;
+      font-size: 12px;
+  }
+}
